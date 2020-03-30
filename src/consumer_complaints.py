@@ -123,7 +123,6 @@ def output(data, output_file_name):
     # open file and with write
     with open(output_file_name, "w") as output_file:
         # write the first line
-        output_file.writelines("product,year,total_complaints,total_company_receive_more,highest percentage\n")
         for item in data:
             product = item[0]
             year = item[1]
